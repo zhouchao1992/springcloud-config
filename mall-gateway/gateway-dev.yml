@@ -18,8 +18,9 @@ spring:
     consul:
       host: localhost
       port: 8500
-  rabbitmq:
-    host: 127.0.0.1
-    port: 15672
-    username: mall
-    password: mall
+  #本地环境不需要配置mq，但是需要启动mq,Springboot会自动连接本地mq
+  #rabbitmq:
+    #host: 127.0.0.1
+    #port: 15672
+    #username: guest
+    #password: guest
