@@ -1,0 +1,17 @@
+server:
+  port: 8089
+
+spring:
+  #profiles:
+   # active: dev
+  application:
+    name: mall-config
+  devtools:
+    restart:
+      enabled: true
+    freemarker:
+      cache: false
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
