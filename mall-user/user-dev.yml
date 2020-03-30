@@ -5,7 +5,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:8769
+        url: http://localhost:8016
   cloud:
     consul:
       host: localhost
