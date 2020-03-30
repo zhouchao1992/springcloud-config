@@ -2,6 +2,10 @@ server:
   port: 8011
 #debug: true
 spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8769
   cloud:
     consul:
       host: localhost
@@ -13,3 +17,11 @@ spring:
       enabled: true
     freemarker:
       cache: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
