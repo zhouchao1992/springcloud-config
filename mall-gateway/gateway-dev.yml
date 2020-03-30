@@ -4,6 +4,10 @@ server:
 spring:
   application:
     name: mall-gateway
+  boot:
+    admin:
+      client:
+        url: "http://localhost:8015"
   devtools:
     restart:
       enabled: true
