@@ -1,1 +1,15 @@
-
+server:
+  port: 8015
+#debug: true
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+  application:
+    name: mall-monitor
+  devtools:
+    restart:
+      enabled: true
+    freemarker:
+      cache: false
